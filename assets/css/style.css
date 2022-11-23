@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../font/Montserrat-Regular.ttf);
+}
+*{
+  font-family:"Montserrat";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navmenu{
+    list-style-type: none;
+    color: gray;
+    background-color: rgb(2, 2, 2);
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    top: 61px;
+    right: 0;
+}
+#checkbox{ 
+    display: none;
+}
+#checkbox:checked ~ #navmenu{
+    max-height: 100vh;
+}
+
+
+
+@media screen and (max-width: 726px) {
+  #logo h2 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  @media screen and (min-width: 576px) {
+    #menuHeader ul {
+      position: static;
+      width: fit-content;
+      flex-direction: row;
+    }
+    #menuHeader label {
+      display: none;
+    }
+  }
+}
