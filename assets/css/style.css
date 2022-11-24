@@ -8,41 +8,231 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* 
+#menuHeader{
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+} */
 
 .navmenu{
-    list-style-type: none;
-    color: gray;
-    background-color: rgb(2, 2, 2);
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.5s;
-    top: 61px;
-    right: 0;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  /* max-height: 0; */
+  overflow: hidden;
+  transition: all 0.5s;
+  top: 61px;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
+
+
+.navmenu label{
+  padding: 1rem;
+}
+
+
+#navdessous{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+}
+
 #checkbox{ 
     display: none;
 }
-#checkbox:checked ~ #navmenu{
-    max-height: 100vh;
+.menugeneral{
+  display: none;
 }
 
 
+.imgpromo{
+  background-image: url(../img/jeans.jpg);
+  height: 30vh;
+  background-position:center ;
+  background-repeat:no-repeat ;
+  background-size: cover;
+  color: white;
+  
+}
+.imgpromo h2{
+  margin-left: 1rem;
+  padding-top: 2rem;
+}
+.imgpromo h3{
+  margin-left: 1rem;
+  padding-top: 2rem;
+}
+.imgpromo p{
+  margin-left: 1rem;
+  margin-top: 2rem;
+  background-color: black;
+  width: fit-content;
+  padding: 0.5rem;
+}
+#produits{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.piececoll{
+width: 48%;
+}
+.imgjeans img{
+  width: 100%;
+}
+.nbritems{
+  flex-direction: column;
+}
+#Subscribe{
+  background-color: black;
+  color: white;
+  padding-bottom: 2rem;
+}
+#Subscribe h2{
+  font-size: 4rem;
+}
+#Subscribe input{
+  height: 2rem;
+  width: 100%;
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+}
+#Subscribe button{
+  margin-top: 0.5rem;
+  background-color: red;
+  width: fit-content;
+  padding: 1rem;
+}
+#contact{
+  background-color: #C4C4C4;
+}
+.contacttext{
+  padding-top: 4rem;
+  justify-content: center;
+  text-align: center;
+  color: gray;
+}
+.contacttext h2{
+  margin-bottom: 2rem;
+}
+.contacttext p{
+  margin-bottom: 1rem;
+}
+#contact input{
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+#contact button{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+.about{
+  text-decoration: underline;
+}
+.splitend{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#theend{
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+/* #checkbox:checked ~ #navmenu{
+    max-height: 100px;
+} */
 
-@media screen and (max-width: 726px) {
-  #logo h2 {
-    font-size: 1rem;
-    text-align: center;
-    padding: 1rem;
+
+
+
+
+
+
+
+
+
+
+@media screen and ( min-width: 726px) {
+  .navmenu{
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    width: 20%;
+
   }
-
-  @media screen and (min-width: 576px) {
-    #menuHeader ul {
-      position: static;
-      width: fit-content;
-      flex-direction: row;
+  .retirercheckbox{
+    display: none;
+  }
+  #desktopchange{
+    width: 70%;
+    margin-left: 20%;
+    margin-right: 10%;
+  }
+  .menugeneral{
+    display: block ;    
+  }
+  .produit,.sous-produits,.support{
+    list-style-type: none;
+  }
+  .piececoll{
+    width: 23%;
     }
-    #menuHeader label {
-      display: none;
-    }
+  #navdessous{
+    margin-left: 20% ;
+    margin-right: 10%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .logo{
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
   }
 }
+.imgpromo{
+  height: 50vh;
+}
+.menugeneral li{
+  margin: 1rem;
+}
+#Subscribe h2{
+  padding-top: 2rem;
+}
+.desktopsplitend1{
+  width: 40%;
+}
+.about{
+  width: 25%;
+  align-items: center;
+}
+  
+.storeinfo{
+  width: 25%;
+}
+#contact{
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 576px) {
+
+  }
